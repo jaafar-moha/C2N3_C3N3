@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-image: url(../../Design/Assets/SVG/Merged-bar-19.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    .navbar--imag{
+        margin-left: 20px;
+    }
+    .navbar--list {
+        color: rgb(46, 23, 148);
+        float: right;
+        font-size: 20px;
+        ul{
+            list-style-type: none;
+            li a{
+                text-decoration: none;
+                margin-right: 50px;
+            }
+
+        }
+    }
+}

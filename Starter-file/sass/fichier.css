@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-image: url(../../Design/Assets/SVG/Merged-bar-19.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .navbar--imag {
+  margin-left: 20px;
+}
+
+.navbar .navbar--list {
+  color: #2e1794;
+  float: right;
+  font-size: 20px;
+}
+
+.navbar .navbar--list ul {
+  list-style-type: none;
+}
+
+.navbar .navbar--list ul li a {
+  text-decoration: none;
+  margin-right: 50px;
+}
+/*# sourceMappingURL=fichier.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ body {
   color: #2e1794;
   float: right;
   font-size: 20px;
+  font-family: 'Cairo', sans-serif;
 }
 
 .navbar .navbar--list ul {
@@ -32,5 +34,94 @@ body {
 .navbar .navbar--list ul li a {
   text-decoration: none;
   margin-right: 50px;
+  color: black;
+}
+
+.header {
+  background-image: url(../../Design/Assets/SVG/En-chiffres-19.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Cairo', serif;
+}
+
+.header .header__ha {
+  margin-top: 0px;
+  padding-top: 25px;
+}
+
+.header .header__pr {
+  margin: 0px 300px 0px 300px;
+}
+
+.pr-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pr-section .pr-section__imag {
+  margin-top: 26px;
+}
+
+.pr-section .pr-section__info {
+  float: right;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  font-size: 19px;
+  width: 700px;
+  font-weight: 900;
+}
+
+.pr-section .pr-section__info .pr-section__info__adder {
+  color: #1078AD;
+}
+
+.pr-section .pr-section__info .pr-section__info__para {
+  color: #7F7F7F;
+}
+
+.pr-section .pr-section__info .pr-section__info__boto {
+  font-size: 26px;
+  width: 70%;
+  background-color: #1078AD;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  border-radius: 8px;
+}
+
+.question {
+  text-align: center;
+  color: #1078AD;
+  font-family: 'Cairo', sans-serif;
+}
+
+.Symptômes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: 'Cairo', sans-serif;
+}
+
+.Symptômes .Symptômes div {
+  width: 100px;
+  margin: 100px;
+}
+
+.Symptômes .Symptômes__1 {
+  margin-left: 100px;
+}
+
+.Symptômes .Symptômes__2 {
+  margin-left: 120px;
 }
 /*# sourceMappingURL=fichier.css.map */

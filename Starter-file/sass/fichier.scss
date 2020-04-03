@@ -8,6 +8,7 @@ body{
     background-size: cover;
     display: flex;
     justify-content: space-between;
+
     .navbar--imag{
         margin-left: 20px;
     }
@@ -15,13 +16,82 @@ body{
         color: rgb(46, 23, 148);
         float: right;
         font-size: 20px;
+        font-family: 'Cairo', sans-serif;
         ul{
             list-style-type: none;
             li a{
                 text-decoration: none;
                 margin-right: 50px;
+                color: black;
             }
 
         }
+    }
+}
+.header{
+    background-image: url(../../Design/Assets/SVG/En-chiffres-19.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Cairo', serif;
+    
+    .header__ha{
+        margin-top: 0px;
+        padding-top: 25px;
+        
+    }
+    .header__pr{
+        margin: 0px 300px 0px 300px;
+    }
+}
+.pr-section{
+    display: flex;
+    justify-content: space-between;
+    .pr-section__imag{
+        margin-top: 26px;
+    }
+    .pr-section__info{
+        float: right;
+        text-align: center;
+        font-family: 'Cairo', sans-serif;
+        font-size: 19px;
+        width: 700px;
+        font-weight: 900;
+        .pr-section__info__adder{
+            color:#1078AD ;
+        }
+        .pr-section__info__para{
+            color: #7F7F7F;
+        }
+        .pr-section__info__boto{
+            font-size: 26px;
+            width: 70%;
+            background-color: #1078AD ;
+            color: white;
+            font-family: 'Cairo', sans-serif;
+            border-radius: 8px;
+
+        }
+    }
+}
+.question{
+    text-align: center;
+    color: #1078AD;
+    font-family: 'Cairo', sans-serif;
+}
+.Symptômes{
+    display: flex;
+    justify-content: center ;
+    align-items: baseline;
+    font-family: 'Cairo', sans-serif;
+    .Symptômes div{
+        width: 100px;
+        margin: 100px;
+    }
+    .Symptômes__1{
+        margin-left: 100px;
+    }
+    .Symptômes__2{
+        margin-left: 120px;
     }
 }

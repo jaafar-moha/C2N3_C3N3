@@ -91,6 +91,7 @@ body {
   color: white;
   font-family: 'Cairo', sans-serif;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .question {
@@ -123,5 +124,56 @@ body {
 
 .Symptômes .Symptômes__2 {
   margin-left: 120px;
+}
+
+.recom {
+  background-color: #1078AD;
+  font-family: 'Cairo', sans-serif;
+}
+
+.recom .recom__heading {
+  text-align: center;
+  color: #D0E5F0;
+}
+
+.recom .recom__consiel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.recom .recom__consiel__text {
+  color: white;
+  font-size: large;
+  line-height: 0.9;
+}
+
+.recom .recom__consiel__text .recom__consiel__text__hed {
+  color: black;
+}
+
+.recom .recom__contact {
+  line-height: 2.5;
+  font-size: large;
+}
+
+.recom .recom__contact .recom__contact__app {
+  color: #F4CF1B;
+}
+
+.recom .recom__contact .recom__contact__num {
+  border: black 1px;
+  padding: 0px 10px;
+  background-color: #F4CF1B;
+  color: #1078AD;
+}
+
+.recom .recom__contact .recom__contact__site {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  border-bottom: solid #F4CF1B;
 }
 /*# sourceMappingURL=fichier.css.map */

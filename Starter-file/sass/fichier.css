@@ -176,4 +176,25 @@ body {
   font-size: x-large;
   border-bottom: solid #F4CF1B;
 }
+
+.test {
+  background-color: #96C5DC;
+  text-align: center;
+}
+
+.test .test__hedd {
+  color: #1078AD;
+  margin-top: 0px;
+}
+
+.test .test__boton {
+  font-size: 26px;
+  width: 50%;
+  background-color: #1078AD;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
 /*# sourceMappingURL=fichier.css.map */

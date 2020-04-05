@@ -14,6 +14,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar .navbar--imag {
@@ -21,10 +24,9 @@ body {
 }
 
 .navbar .navbar--list {
-  color: #2e1794;
   float: right;
   font-size: 20px;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
 }
 
 .navbar .navbar--list ul {
@@ -34,7 +36,20 @@ body {
 .navbar .navbar--list ul li a {
   text-decoration: none;
   margin-right: 50px;
-  color: black;
+  color: #1078AD;
+}
+
+.navbar .navbar--list ul .navbar--list__arab {
+  border: solid #1078AD 1px;
+  color: #000;
+  padding: 2px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.navbar .navbar--list ul i {
+  color: #F4CF1B;
+  margin-left: 7px;
 }
 
 .header {
@@ -42,7 +57,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  font-family: 'Cairo', serif;
+  font-family: "Cairo", serif;
+  margin-top: 83px;
 }
 
 .header .header__ha {
@@ -70,7 +86,7 @@ body {
 .pr-section .pr-section__info {
   float: right;
   text-align: center;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
   font-size: 19px;
   width: 700px;
   font-weight: 900;
@@ -85,19 +101,21 @@ body {
 }
 
 .pr-section .pr-section__info .pr-section__info__boto {
-  font-size: 26px;
   width: 70%;
+  font-size: 26px;
   background-color: #1078AD;
   color: white;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
+  font-weight: 900;
   border-radius: 8px;
   cursor: pointer;
+  border: none;
 }
 
 .question {
   text-align: center;
   color: #1078AD;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
 }
 
 .Symptômes {
@@ -110,7 +128,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
 }
 
 .Symptômes .Symptômes div {
@@ -128,7 +146,7 @@ body {
 
 .recom {
   background-color: #1078AD;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
 }
 
 .recom .recom__heading {
@@ -168,6 +186,7 @@ body {
   padding: 0px 10px;
   background-color: #F4CF1B;
   color: #1078AD;
+  border-radius: 7px;
 }
 
 .recom .recom__contact .recom__contact__site {
@@ -180,6 +199,7 @@ body {
 .test {
   background-color: #96C5DC;
   text-align: center;
+  height: 220px;
 }
 
 .test .test__hedd {
@@ -188,13 +208,87 @@ body {
 }
 
 .test .test__boton {
-  font-size: 26px;
   width: 50%;
+  font-size: 26px;
   background-color: #1078AD;
   color: white;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", serif;
+  font-weight: 900;
   border-radius: 8px;
   cursor: pointer;
   border: none;
+}
+
+.ac-footer__imag {
+  text-align: center;
+}
+
+.ac-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Cairo", serif;
+}
+
+.ac-footer__list .ac-footer__list__li {
+  font-size: 25px;
+  line-height: 2.5;
+}
+
+.ac-footer__list .ac-footer__list__li ul {
+  list-style-type: none;
+}
+
+.ac-footer__list .ac-footer__list__li ul li a {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  margin-right: 60px;
+  color: #1078AD;
+  font-weight: 900;
+}
+
+.ac-footer__list .ac-footer__list__li ul .ac-footer__list__li__arab {
+  border: solid #1078AD 1px;
+  color: #000;
+  padding: 2px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.ac-footer__list .ac-footer__list__li ul i {
+  color: #F4CF1B;
+  margin-left: 7px;
+}
+
+.ac-footer__list .ac-footer__list__conct {
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.ac-footer__list .ac-footer__list__conct .ac-footer__list__conct__hed2 {
+  color: #1078AD;
+}
+
+.ac-footer__list .ac-footer__list__conct .ac-footer__list__conct__num {
+  color: #369D53;
+}
+
+.ac-footer__list .ac-footer__list__algo {
+  width: 80%;
+  margin: 70px;
+  color: #7F7F7F;
+}
+
+.fin-footer {
+  height: 30px;
+  width: 100%;
+  background-color: #1078AD;
 }
 /*# sourceMappingURL=fichier.css.map */

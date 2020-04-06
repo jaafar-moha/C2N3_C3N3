@@ -1,0 +1,103 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-image: url(../../Design/Assets/SVG/Merged-bar-19.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .navbar--imag {
+  margin-left: 20px;
+}
+
+.navbar .navbar--list {
+  float: right;
+  font-size: 20px;
+  font-family: "Cairo", serif;
+}
+
+.navbar .navbar--list ul {
+  list-style-type: none;
+}
+
+.navbar .navbar--list ul li a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: #1078AD;
+}
+
+.navbar .navbar--list ul .navbar--list__arab {
+  border: solid #1078AD 1px;
+  color: #000;
+  padding: 2px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.navbar .navbar--list ul i {
+  color: #F4CF1B;
+  margin-left: 7px;
+}
+
+.header {
+  background-image: url(../../Design/Assets/SVG/En-chiffres-19.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Cairo", serif;
+  margin-top: 83px;
+}
+
+.header .header__ha {
+  margin-top: 0px;
+  padding-top: 25px;
+}
+
+.header .header__pr {
+  margin: 0px 300px 0px 300px;
+}
+
+.protége {
+  font-family: "Cairo", serif;
+}
+
+.protége .protége__addr {
+  text-align: center;
+  color: #1078AD;
+  font-size: large;
+}
+
+.protége .protége__exemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0px 200px;
+  color: #1078AD;
+}
+
+.protége .protége__maisan {
+  text-align: center;
+  margin-top: 20px;
+  color: #1078AD;
+  font-family: "Cairo", serif;
+}
+/*# sourceMappingURL=conseil.css.map */

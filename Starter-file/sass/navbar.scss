@@ -1,0 +1,52 @@
+
+.navbar{
+    background-image: url(../../Design/Assets/SVG/Merged-bar-19.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .navbar--imag{
+        margin-left: 20px;
+    }
+    .navbar--list {
+        float: right;
+        font-size: 20px;
+        font-family: $styleline ;
+        ul{
+            list-style-type: none;
+            li a{
+                text-decoration: none;
+                margin-right: 50px;
+                color: $prcolor;
+            }
+            .navbar--list__arab{
+                @include list-acciel ();
+            }
+            i{
+                @include styl-i();
+
+            }
+
+        }
+    }
+}
+.header{
+    background-image: url(../../Design/Assets/SVG/En-chiffres-19.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: $styleline ;
+    margin-top: 83px;
+    
+    .header__ha{
+        margin-top: 0px;
+        padding-top: 25px;
+        
+    }
+    .header__pr{
+        margin: 0px 300px 0px 300px;
+    }
+}

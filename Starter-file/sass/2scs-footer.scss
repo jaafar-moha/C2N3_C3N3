@@ -1,0 +1,110 @@
+.recom{
+    background-color: $prcolor;
+    font-family: $styleline ;
+    .recom__heading{
+        text-align: center;
+        color: #D0E5F0;
+       
+    }
+    .recom__consiel{
+        display: flex;
+        justify-content: space-around;
+    }
+    .recom__consiel__text{
+        color: white;
+        font-size: large;
+        line-height: 0.9;
+        .recom__consiel__text__hed{
+            color: black;
+        }
+    
+    }
+    .recom__contact{
+        line-height: 2.5;
+        font-size: large;
+        .recom__contact__app{
+            color: $decolor;
+        }
+        .recom__contact__num{
+            border: black 1px ;
+            padding: 0px 10px;
+            background-color:$decolor ;
+            color: $prcolor;
+            border-radius: 7px;
+        }
+        .recom__contact__site{
+            color: white;
+            text-decoration: none;
+            font-size: x-large;
+            border-bottom: solid $decolor;
+        }
+    }
+}
+.test{
+    background-color: #96C5DC;
+    text-align: center;
+    height: 220px;
+    .test__hedd{
+        color: $prcolor;
+        margin-top: 0px;
+    }
+    .test__boton{
+        width: 50%;
+        @include button ();
+
+    }
+}
+.ac-footer__imag{
+    text-align: center;
+}
+.ac-footer__list{
+    display: flex;
+    justify-content: space-between;
+    font-family: $styleline ;
+    .ac-footer__list__li{
+        font-size: 25px;
+        line-height: 2.5;
+        ul{
+            list-style-type: none;
+            li a{
+                display: block;
+                justify-content: space-between;
+                text-decoration: none;
+                margin-right: 60px;
+                color: $prcolor;
+                font-weight: 900;
+            }
+            .ac-footer__list__li__arab{
+                @include list-acciel ();
+            }
+            i{
+                @include styl-i ();
+
+            }
+
+        }
+        
+    }
+    .ac-footer__list__conct{
+        text-align: center;
+        width: 100%;
+        line-height: 1.5;
+        .ac-footer__list__conct__hed2{
+            color:$prcolor ;
+        }
+        .ac-footer__list__conct__num{
+            color: #369D53 ;
+        }
+    }
+    .ac-footer__list__algo{
+        width: 80%;
+        margin: 70px;
+        color: #7F7F7F;
+    }
+}
+.fin-footer{
+    height: 30px;
+    width: 100%;
+    background-color: $prcolor;
+}
+

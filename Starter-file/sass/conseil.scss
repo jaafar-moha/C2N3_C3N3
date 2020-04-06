@@ -23,6 +23,7 @@ body{
 
 .protége{
     font-family: $styleline;
+    line-height: 1.5;
     .protége__addr{
         text-align: center;
         color: $prcolor;
@@ -43,4 +44,35 @@ body{
         font-family: $styleline;
     }
 
+}
+.Connaître{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D0E5F0;
+    .Connaître__info{
+        text-align: center;
+        font-family: $styleline;
+        font-size: larger;
+        .Connaître__info__had{
+            color: $prcolor;
+        }
+        .Connaître__info__parg{
+            color: #1A519E;
+            font-weight: 900;
+        }
+    }
+    .Connaître__plus-info button{
+        background-color: #1078AD;
+        font-family: $styleline;
+        font-weight: 900;
+        border-radius: 7px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        padding: 14px 40px;
+        width: 250px;
+        text-align: center;
+
+    }
 }

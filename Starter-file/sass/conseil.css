@@ -72,6 +72,7 @@ body {
 
 .protége {
   font-family: "Cairo", serif;
+  line-height: 1.5;
 }
 
 .protége .protége__addr {
@@ -99,5 +100,45 @@ body {
   margin-top: 20px;
   color: #1078AD;
   font-family: "Cairo", serif;
+}
+
+.Connaître {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D0E5F0;
+}
+
+.Connaître .Connaître__info {
+  text-align: center;
+  font-family: "Cairo", serif;
+  font-size: larger;
+}
+
+.Connaître .Connaître__info .Connaître__info__had {
+  color: #1078AD;
+}
+
+.Connaître .Connaître__info .Connaître__info__parg {
+  color: #1A519E;
+  font-weight: 900;
+}
+
+.Connaître .Connaître__plus-info button {
+  background-color: #1078AD;
+  font-family: "Cairo", serif;
+  font-weight: 900;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 14px 40px;
+  width: 250px;
+  text-align: center;
 }
 /*# sourceMappingURL=conseil.css.map */

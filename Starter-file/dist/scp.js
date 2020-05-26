@@ -228,39 +228,35 @@ const quiz = [
 	
 ]
 
-// :move to next step (information/questionnaire/resultats)
-const contaier = document.getElementById("contaier");
-const information = document.getElementById("info");
+const stepper = document.getElementById("contaier");
+const préambule = document.getElementById("info");
 const progretion = document.getElementById("pro");
 const questionnaire = document.getElementById("box");
 const questionDiv = document.getElementById("questionnaire");
 const anti=document.getElementById('Anti-inflammatoires')
 const réponce = document.getElementById("réponce");
-const ruseltas = document.getElementById("ruseltas");
-const afficheResult = document.getElementsByClassName('rusel')
-const pré = document.getElementById("pré");
-const sui = document.getElementById("sui");
+const ruseltas = document.getElementById("resultas");
+const afficheResult = document.getElementsByClassName('"rusel')
+
+const Demarer = document.getElementById("ts1");
+const précédant = document.getElementById("pré");
+const suivant = document.getElementById("sui");
 const répandre = document.getElementById("répan");
-const ts1 = document.getElementById("ts1");
+
+
 const list = document.getElementsByClassName("list--item");
 const count = document.getElementById("count");
-
-
 // passer a l 'etape suivant
 function bar(progres){
     progretion.style.width =`${(100/22)*(progres+1)}%`;
     progretion.style.backgroundColor='#1078AD';
     count.textContent= (cont +1) + '/' + quiz.length;
-
-    //progretion.firstElementChild.style.width =`${100/22*progres}%`;
-    //progretion.firstElementChild.style.backgroundColor='#1078AD';
-    
+   
 }
 
-ts1.addEventListener('click', nextStep);
- 
+Demarer.addEventListener('click', nextStep); 
 function nextStep(){
-    information.style.display='none';
+    préambule.style.display='none';
     questionnaire.style.display='block';
     list[0].classList.remove('list--item__active');
     list[1].classList.add('list--item__active');
@@ -277,31 +273,20 @@ répandre.addEventListener('click',()=>{
     progretion.style.display='block';
     window.location.reload();   
 })
-
-
-// afficher la question
+     // afficher la question
 function showQuestion (questionIndex){
     let ques = quiz[questionIndex];
-    questionDiv.textContent= ques.question;
-    réponce.innerHTML=ques.choices;
-    
+    questionDiv.textContent = ques.question;
+    réponce.innerHTML=ques.choices    
 }
-let cont = 0
+     //afficher la question suivant
+var cont = 0;
 var newArray = [];
-
-sui.addEventListener('click',nextQuestion);   //afficher la question suivant
-
+suivant.addEventListener('click',nextQuestion);
 function nextQuestion(){
-    
-    
-    
-   //récuperation du valure
-  
-   const récup = document.getElementById("numerique");
-  
-   if(réponce.children[1].id === "numerique"){
 
-    
+  const récup = document.getElementById("numerique"); //récuperation du valure
+   if(réponce.children[1].id === "numerique"){
         if(!récup.value){
            alert("enter une valeur");
            return;
@@ -314,12 +299,12 @@ function nextQuestion(){
            alert("l'age doit etre entre 15 et 110");
            return;
 
-       }else if (cont === 11 && (récup.value<80 || récup.value>250)){
-           alert("le taille doit etre entre 80 et 250");
-           return;
-
        }else if (cont === 12 && (récup.value<20 || récup.value>250)){
            alert("le poids doit etre entre 20 et 250");
+           return;
+
+       }else if (cont === 11 && (récup.value<80 || récup.value>250)){
+           alert("le taille doit etre entre 80 et 250");
             return;
 
        }else{
@@ -332,19 +317,19 @@ function nextQuestion(){
             alert('svp choisir une reponse');
             return;
         }else {
-            newArray.push(select);
+            newArray.push(select.value);
             console.log(newArray);
 
         }
-    }
-        
+
+    }   
     cont +=1;   
     if(cont > 0){
         pré.style.display="block"
         anti.style.display="none"  
    }
    if(cont===21){
-    sui.textContent="terminer";     
+       suivant.textContent="terminer";     
    } 
  
    if(cont===22){
@@ -356,12 +341,9 @@ function nextQuestion(){
     getResult();
    } 
    showQuestion(cont);
-   bar(cont)  ; 
-   
+    bar(cont)  ; 
 }showQuestion(cont);
-
-
-pré.addEventListener('click',lastQuestion);//afficher la question précedent
+précédant.addEventListener('click',lastQuestion);//afficher la question précedent
 function lastQuestion(){
     cont -= 1
     showQuestion (cont)
@@ -372,14 +354,11 @@ function lastQuestion(){
     if(cont <1){
         anti.style.display="block"
     }
-
     bar(cont)
-
 }
-lastQuestion();
-// --------------------------------------------------------------
 
-const getR = document.getElementById("getR");
+//********************************************************************************************************** *
+const getR = document.getElementById('getR');
 
 
 function getResult (){
@@ -499,5 +478,7 @@ function getResult (){
             getR.textContent= `ERROR`;
         }
 
-}
 
+
+
+}

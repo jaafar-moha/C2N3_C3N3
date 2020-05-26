@@ -243,42 +243,52 @@ body {
 }
 
 .ruseltas {
-  text-align: center;
-  font-family: "Cairo", serif;
-  font-weight: bold;
   display: none;
+  font-family: "Cairo", serif;
 }
 
 .ruseltas h3 {
+  text-align: center;
   color: #026534;
-  font-size: 25px;
+  font-size: xx-large;
+  font-weight: 900;
 }
 
 .ruseltas .rusel {
+  padding: 40px;
   background-color: #1078AD;
-  margin: auto  350px;
-  padding: 0 100px;
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .ruseltas .rusel h2 {
-  color: white;
+  color: #F4CF1B;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .ruseltas .rusel p {
-  color: #F4CF1B;
+  font-size: small;
+  font-weight: bold;
 }
 
-.ruseltas .repon {
+.ruseltas .répandre {
+  margin-bottom: 30px;
+  margin-left: 600px;
+}
+
+.ruseltas .répandre .repon {
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #1078AD;
+  border-radius: 5px;
   background-color: #1078AD;
-  font-family: "Cairo", serif;
-  font-weight: 900;
-  border-radius: 7px;
-  border: none;
+  font-size: small;
+  font-weight: 700;
   color: white;
-  font-size: 20px;
-  padding: 14px 40px;
-  width: 250px;
-  cursor: pointer;
 }
 
 .recom {
